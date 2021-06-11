@@ -38,12 +38,12 @@ namespace Mercadolibre.test.Logic.Presenter
                         Condition = x.attributes.FirstOrDefault(x=> x.id == "ITEM_CONDITION").value_name,
                         ImageUrl = x.thumbnail,
                         SoldQuantity = x.sold_quantity,
-                        Installments = new InstallmentsModel
+                        Installments = x.installments != null ? new InstallmentsModel
                         {
                             Amount = x.installments.amount,
                             Quantity = x.installments.quantity,
                             Rate = x.installments.rate
-                        }
+                        } : null
 
                     }).ToList();
                 }

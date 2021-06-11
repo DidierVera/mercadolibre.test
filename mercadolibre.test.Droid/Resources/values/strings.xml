@@ -7,5 +7,7 @@
     <string name="lbl_search_button">Buscar</string>
     <string name="come_back_btn">Volver</string>
     <string name="lbl_products_result">Resultado de la búsqueda</string>
+    <string name="img_product_desc">Descripción de la imagen del producto</string>
+    <string name="lbl_product_detail">Detalle del producto</string>
     
 </resources>

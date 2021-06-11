@@ -1,15 +1,9 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.V7.Widget;
-using Android.Views;
 using Android.Widget;
 using mercadolibre.test.Droid.Pages.Adapters;
 using Mercadolibre.test.Logic.Models.SharedModels;
@@ -17,12 +11,14 @@ using Newtonsoft.Json;
 
 namespace mercadolibre.test.Droid.pages
 {
-    [Activity(Label = "Resultado de la búsqueda")]
+    [Activity(Label = "Resultado de la búsqueda", Theme = "@style/AppTheme.NoActionBar")]
     public class ListResultActivity : Activity
     {
         private RecyclerView _productsRecyclerView;
         private ProductAdapter _adapter;
         private List<ProductModel> _productsList;
+        private ImageButton _imgBackButton;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -35,10 +31,17 @@ namespace mercadolibre.test.Droid.pages
 
             LoadView();
             LoadProducts();
+            SetEvents();
+        }
+
+        private void SetEvents()
+        {
+            _imgBackButton.Click += (sender, e) => OnBackPressed();
         }
 
         private void LoadView()
         {
+            _imgBackButton = FindViewById<ImageButton>(Resource.Id.imgBackButton);
             _productsRecyclerView = FindViewById<RecyclerView>(Resource.Id.productsRecycler);
         }
 

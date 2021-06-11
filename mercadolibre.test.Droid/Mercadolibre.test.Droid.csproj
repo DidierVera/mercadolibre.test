@@ -69,6 +69,7 @@
     <Compile Include="Config\DependencyModule.cs" />
     <Compile Include="Pages\Adapters\ProductAdapter.cs" />
     <Compile Include="Pages\ViewHolders\ProductViewHolder.cs" />
+    <Compile Include="Helpers\LoadImageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -121,6 +122,10 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\back_button.xml">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
@@ -128,6 +133,7 @@
     <Folder Include="Config\" />
     <Folder Include="Pages\Adapters\" />
     <Folder Include="Pages\ViewHolders\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
