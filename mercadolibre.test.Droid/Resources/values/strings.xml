@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mercadolibre test</string>
+    <string name="action_settings">Settings</string>
+    <string name="see_details_btn">Ver Detalle...</string>
+    <string name="lbl_search_textfield">Buscar producto</string>
+    <string name="lbl_search_button">Buscar</string>
+    <string name="come_back_btn">Volver</string>
+    <string name="lbl_products_result">Resultado de la búsqueda</string>
+    
+</resources>

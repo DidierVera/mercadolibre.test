@@ -1,0 +1,48 @@
+﻿<Properties StartupConfiguration="{2884BACF-15A4-4321-9E41-C75058D90ABE}|Default">
+  <MonoDevelop.Ide.ItemProperties.mercadolibre.test.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Pixel_2_API_28" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="mercadolibre.test.Droid/Pages/ListResultActivity.cs">
+    <Files>
+      <File FileName="mercadolibre.test.Droid/MainActivity.cs" Line="45" Column="25" />
+      <File FileName="mercadolibre.test.Droid/Resources/layout/activity_main.xml" />
+      <File FileName="mercadolibre.test.Droid/Resources/values/strings.xml" />
+      <File FileName="mercadolibre.test.Droid/Resources/layout/list_result_layout.xml" />
+      <File FileName="mercadolibre.test.Droid/Resources/layout/product_list_item_view.xml" />
+      <File FileName="mercadolibre.test.Droid/Pages/ViewHolders/ProductViewHolder.cs" />
+      <File FileName="Mercadolibre.test.Logic/Models/SharedModels/ProductModel.cs" />
+      <File FileName="Mercadolibre.test.Logic/Presenter/ProductPresenter.cs" />
+      <File FileName="Mercadolibre.test.Logic/Services/MainApiClient.cs" />
+      <File FileName="mercadolibre.test.Droid/Pages/ListResultActivity.cs" Line="24" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="mercadolibre" expanded="True">
+            <Node name="mercadolibre.test.Droid" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="ListResultActivity.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Mercadolibre.test.Logic" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="SharedModels" expanded="True" />
+              </Node>
+              <Node name="Presenter" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="Repository" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/didier.vera/Documents/mercado libre/xamarin/mercadolibre.test/Mercadolibre.test.Logic/Presenter/ProductPresenter.cs" relfile="Mercadolibre.test.Logic/Presenter/ProductPresenter.cs" line="43" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Mercadolibre.test.Droid AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.CCMBBCB741902396" />
+  <MultiItemStartupConfigurations />
+</Properties>

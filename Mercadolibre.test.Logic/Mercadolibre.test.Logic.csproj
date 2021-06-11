@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Repository\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Models\" />
+    <None Remove="Models\ServiceModel\" />
+    <None Remove="Contract\" />
+    <None Remove="Contract\Services\" />
+    <None Remove="Presenter\" />
+    <None Remove="Config\" />
+    <None Remove="Autofac" />
+    <None Remove="Services\Mock\" />
+    <None Remove="Models\SharedModels\" />
+    <None Remove="Contract\Presenters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Repository\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\ServicesModel\" />
+    <Folder Include="Contract\" />
+    <Folder Include="Contract\Services\" />
+    <Folder Include="Presenter\" />
+    <Folder Include="Config\" />
+    <Folder Include="Services\Mock\" />
+    <Folder Include="Models\SharedModels\" />
+    <Folder Include="Contract\Presenters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Autofac" Version="6.2.0" />
+  </ItemGroup>
+</Project>
