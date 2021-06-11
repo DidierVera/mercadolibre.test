@@ -19,12 +19,7 @@ namespace Mercadolibre.test.Logic.Config
         {
             protected override void Load(ContainerBuilder builder)
             {
-#if DEBUG
                 builder.RegisterType<ProductsService>().As<IProductsService>();
-#else
-                builder.RegisterType<ProductsServiceMock>().As<IProductsService>();
-#endif
-
             }
         }
     }

@@ -18,6 +18,9 @@
     <None Remove="Services\Mock\" />
     <None Remove="Models\SharedModels\" />
     <None Remove="Contract\Presenters\" />
+    <None Remove="Microsoft.AppCenter.Crashes" />
+    <None Remove="Microsoft.AppCenter" />
+    <None Remove="Microsoft.AppCenter.Analytics" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
@@ -35,5 +38,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AppCenter" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.2.0" />
   </ItemGroup>
 </Project>

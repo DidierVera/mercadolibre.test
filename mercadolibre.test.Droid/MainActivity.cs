@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using System;
 using Android.App;
 using Android.OS;
 using Android.Runtime;
@@ -32,6 +35,9 @@ namespace mercadolibre.test.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            AppCenter.Start("5d6bbac8-d8b3-4964-9e66-82c90df2040a",
+                   typeof(Analytics), typeof(Crashes));
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
