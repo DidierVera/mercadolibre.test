@@ -51,7 +51,7 @@ namespace Mercadolibre.test.Logic.Presenter
             }
             catch (Exception ex)
             {
-
+                _genericView.ShowAlert(ex.Message);
             }
         }
     }

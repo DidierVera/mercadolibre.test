@@ -40,9 +40,19 @@
         android:paddingRight="20dp"
         android:gravity="center"
         android:orientation="vertical">
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/productsRecycler"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/productsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:padding="10dp"
+            android:visibility="gone"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="@string/lbl_no_result_message"
+            android:textAlignment="center"
+            android:id="@+id/lblNoResult"/>
     </LinearLayout>
 </LinearLayout>

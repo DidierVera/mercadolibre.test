@@ -27,7 +27,7 @@ namespace mercadolibre.test.Droid
         private EditText _edtFilter;
         private Button _btnSearch;
         private ProgressDialog _progressDialog;
-
+        private Android.App.AlertDialog alertDialog;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -68,7 +68,10 @@ namespace mercadolibre.test.Droid
 
         private void OnSearchClicked(object sender, EventArgs e)
         {
-            LoadProducts(_edtFilter.Text);
+            if (!string.IsNullOrWhiteSpace(_edtFilter.Text))
+            {
+                LoadProducts(_edtFilter.Text);
+            }
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
@@ -91,6 +94,30 @@ namespace mercadolibre.test.Droid
             var builder = AutofacConfig.CreateBuilder();
             builder.RegisterModule<DependencyModule>();
             ModuleLocator.ConfigureModules(builder.Build());
+        }
+
+        public void ShowAlert(string message)
+        {
+            _edtFilter.Text = string.Empty;
+
+            Android.App.AlertDialog.Builder builder
+                = new Android.App.AlertDialog
+                      .Builder(this);
+
+            builder.SetMessage("mensaje del servicio: " + message.Substring(1, 100));
+            builder.SetTitle("Ups! Algo ha salido mal");
+            builder.SetCancelable(false);
+            builder.SetPositiveButton("Aceptar", OnAceptClick);
+
+            // Create the Alert dialog
+            alertDialog = builder.Create();
+            // Show the Alert Dialog box
+            alertDialog.Show();
+        }
+
+        private void OnAceptClick(object sender, DialogClickEventArgs e)
+        {
+            alertDialog.Dispose();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace mercadolibre.test.Droid.pages
         private ProductAdapter _adapter;
         private List<ProductModel> _productsList;
         private ImageButton _imgBackButton;
+        private TextView _lblNoResult;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -41,12 +42,21 @@ namespace mercadolibre.test.Droid.pages
 
         private void LoadView()
         {
+            _lblNoResult = FindViewById<TextView>(Resource.Id.lblNoResult);
             _imgBackButton = FindViewById<ImageButton>(Resource.Id.imgBackButton);
             _productsRecyclerView = FindViewById<RecyclerView>(Resource.Id.productsRecycler);
         }
 
         private void LoadProducts()
         {
+            //Show no result message 
+            _lblNoResult.Visibility = Android.Views.ViewStates.Gone;
+            if (_productsList.Count == 0)
+            {
+                _lblNoResult.Visibility = Android.Views.ViewStates.Visible;
+            }
+
+            //create adapter
             _adapter = new ProductAdapter(_productsList);
             _adapter.OnItemClicked += Adapter_OnItemClick;
 
