@@ -1,14 +1,11 @@
 *.userprefs
 *.user
-*/*/.vs/
-*/*/bin
-*.cache
+bin
 Configuration.Override.props
 Configuration.OperatingSystem.props
-*/*/obj
+obj
 packages
 .DS_Store
-*/.DS_Store
 .nuget
 *.nupkg
 TestResult.xml
