@@ -1,6 +1,6 @@
 *.userprefs
 *.user
-*/.vs/
+*/*/.vs/
 */*/bin
 *.cache
 Configuration.Override.props
