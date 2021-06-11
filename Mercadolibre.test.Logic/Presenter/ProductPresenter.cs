@@ -30,11 +30,21 @@ namespace Mercadolibre.test.Logic.Presenter
                 {
                     data = serviceResult.results.Select(x => new ProductModel
                     {
-                        Price = x.price,
                         ProductName = x.title,
+                        Price = x.price,
+                        FreeShipping = x.shipping.free_shipping ? "Envío gratis" : "",
                         City = x.address.city_name,
                         State = x.address.state_name,
-                        FreeShipping = x.shipping.free_shipping ? "Envío gratis" : ""
+                        Condition = x.attributes.FirstOrDefault(x=> x.id == "ITEM_CONDITION").value_name,
+                        ImageUrl = x.thumbnail,
+                        SoldQuantity = x.sold_quantity,
+                        Installments = new InstallmentsModel
+                        {
+                            Amount = x.installments.amount,
+                            Quantity = x.installments.quantity,
+                            Rate = x.installments.rate
+                        }
+
                     }).ToList();
                 }
                 _genericView.UpdateView(data);

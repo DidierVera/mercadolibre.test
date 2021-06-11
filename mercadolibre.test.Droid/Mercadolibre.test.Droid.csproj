@@ -64,7 +64,6 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Pages\SearchActivity.cs" />
     <Compile Include="Pages\ListResultActivity.cs" />
     <Compile Include="Pages\ProductDetailActivity.cs" />
     <Compile Include="Config\DependencyModule.cs" />
@@ -114,11 +113,11 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\search_layout.xml">
+    <AndroidResource Include="Resources\layout\product_list_item_view.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\product_list_item_view.xml">
+    <AndroidResource Include="Resources\drawable\product_item_shape.xml">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

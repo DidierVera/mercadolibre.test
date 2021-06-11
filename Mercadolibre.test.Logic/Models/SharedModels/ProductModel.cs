@@ -9,8 +9,9 @@ namespace Mercadolibre.test.Logic.Models.SharedModels
         public string City { get; set; }
         public string FreeShipping { get; set; }
         public string SellerName { get; set; }
-        public string SoldQuantity { get; set; }
+        public double SoldQuantity { get; set; }
         public string Condition { get; set; }
-        public object MyProperty { get; set; }
+        public string ImageUrl { get; set; }
+        public InstallmentsModel Installments { get; set; }
     }
 }
